@@ -89,6 +89,6 @@ saveToFileAndCompress(shrunk_100, fileName)
 saveToFileAndCompress(movie_data_complete, indexFileName)
 
 endProcessingTime = timeit.timeit()
-elapsedTimeInMilliseconds = endProcessingTime - startProcessingTime * 1000
+elapsedTimeInMilliseconds = (endProcessingTime - startProcessingTime) * 1000
 
-print("All completed in:" + elapsedTimeInMilliseconds + "ms")
+print("All completed in: %sms" % elapsedTimeInMilliseconds)
