@@ -11,6 +11,7 @@ PARSER = argparse.ArgumentParser(description='This tool will create csv files of
 PARSER.add_argument('start', help='Year to start scraping from', type=int)
 PARSER.add_argument('end', help='Year to start scraping at', type=int)
 
+# TODO: Validate the years (not lower than <1900 or higher than 2100)
 ARGS = PARSER.parse_args()
 
 years = range(ARGS.start, ARGS.end + 1)
